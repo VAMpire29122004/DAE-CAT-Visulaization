@@ -37,9 +37,16 @@ with t2:
     f1 = a.selectbox("x", doe.FACTORS, 0, format_func=doe.LABELS.get, key="3x")
     f2 = b.selectbox("y", doe.FACTORS, 1, format_func=doe.LABELS.get, key="3y")
     f3 = c.selectbox("z", doe.FACTORS, 3, format_func=doe.LABELS.get, key="3z")
-    fig = px.scatter_3d(allruns, x=actual[f1], y=actual[f2], z=actual[f3], color="Y_pct_3a", symbol="Design",
-                        color_continuous_scale="Viridis", hover_data=["run", "Design"])
-    fig.update_layout(height=600, scene=dict(xaxis_title=doe.LABELS[f1], yaxis_title=doe.LABELS[f2], zaxis_title=doe.LABELS[f3]))
+        fig = px.scatter_3d(allruns, x=actual[f1], y=actual[f2], z=actual[f3], color="Y_pct_3a", symbol="Design",
+                        color_continuous_scale="Viridis", hover_data=["run", "Design"],
+                        labels={"Y_pct_3a": "Y (%)"})
+    fig.update_layout(
+        height=600,
+        margin=dict(t=60),
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="left", x=0, title_text=""),
+        coloraxis_colorbar=dict(title="Y (%)", len=0.75, y=0.45),
+        scene=dict(xaxis_title=doe.LABELS[f1], yaxis_title=doe.LABELS[f2], zaxis_title=doe.LABELS[f3]),
+    )
     show(fig)
 
 with t3:
