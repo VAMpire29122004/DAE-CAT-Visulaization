@@ -1,0 +1,10 @@
+product,substrate,dichalcogenide,yield_pct,comment
+3a,N-methylindole,(PhSe)2,100,quantitative; model reaction
+3b,N-methylindole,(PhS)2,11,S much worse than Se
+3d,indole (N-H),(PhSe)2,98,
+3f,N-methylindole,(BnSe)2,20,lower yield
+3h,"N,N-dimethylaniline",(PhSe)2,45,fair
+3i,"1,3,5-trimethoxybenzene",(PhSe)2,7,poor
+-,N-acetylindole,(PhSe)2,0,no reaction (EWG on N)
+-,N-methylindole,(PhTe)2,0,no reaction
+-,N-methylindole,DSBA,0,no reaction (carboxylic acid)

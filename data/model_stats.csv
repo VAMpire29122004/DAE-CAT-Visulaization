@@ -1,0 +1,13 @@
+metric,fcCCD,D-optimal,note
+Number of runs,25.0,17.0,
+Model coefficients,15.0,15.0,
+Residual degrees of freedom,10.0,2.0,runs - coefficients
+Variance of Y,587.0,660.3,SI
+Residual SD (%),11.8,4.982,SI
+Adjusted R2 (%),76.29,96.24,SI label: % explained variance; matches adjusted R2 (recomputed)
+Raw R2 (%),90.12,99.53,recomputed from the run tables
+RMSECV (%),18.15,33.6,"SI, leave-one-out"
+CV explained variance Q2 (%),43.86,-70.98,SI
+Max VIF (quadratic terms),1.979,1.276,SI; D-opt max over all terms
+Trace of dispersion matrix,2.3543,3.6539,SI
+Experimental variance used (s2),2.44,2.44,main text: centre-point replicates

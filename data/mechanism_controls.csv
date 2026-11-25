@@ -1,0 +1,5 @@
+experiment,atmosphere_or_additive,conversion_or_yield_pct,source
+"Standard conditions, air (Table 2 entry 14: 7 h, 5 mol%, 323 mM, 2 equiv)",air,67,fcCCD run 14
+"Same, argon atmosphere",argon,10,Fig. S6
+"Same, O2 atmosphere",oxygen,84,Fig. S6
+Radical trap TEMPO added (standard conditions),air + TEMPO,85,"yield of 3a, main text"

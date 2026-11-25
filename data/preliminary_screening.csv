@@ -1,0 +1,10 @@
+entry,solvent,light,catalyst,catalyst_mol_pct,time_h,conversion_pct
+1,CH3CN,Blue LED,Zn(OTf)2,5,3,31.0
+2,CH3CN,Dark,Zn(OTf)2,5,3,
+3,CH3CN,Sunlight,Zn(OTf)2,5,3,
+4,DMF,Blue LED,Zn(OTf)2,5,4,32.0
+5,DMF,Dark,Zn(OTf)2,5,4,
+6,THF,Blue LED,Zn(OTf)2,5,4,29.0
+7,THF,Dark,Zn(OTf)2,5,4,
+8,CH3CN,Blue LED,ZnCl2,5,3,36.0
+9,CH3CN,Blue LED,none,0,3,15.0
