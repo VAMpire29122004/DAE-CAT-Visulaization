@@ -28,14 +28,14 @@ st.markdown("""
 - TEMPO does not suppress the reaction (85%), argon kills it (10%), O\u2082 restores it (84%) \u2192 O\u2082 re-oxidises PhSeH to (PhSe)\u2082.
 """)
 
-with st.expander("Data notes and inconsistencies I found while transcribing"):
+with st.expander("Data notes"):
     st.markdown("""
 - **Refit check:** OLS on the run tables in `data/` reproduces the published coefficients for both designs, so the transcription is consistent with the SI models.
-- **D-optimal run (5, 5, 242, 1.0):** SI Table S4 gives **36%**; main-text Table 2 entry 26 gives **56%**. The CSV uses the SI value (the one the SI model was fitted to).
-- **D-optimal run (5, 12.5, 161, 1.5):** SI Table S4 gives **78%** (labelled LR087/LR122); the same point in the fcCCD is **93%**.
+- **Run counts vs experimental effort (author clarification):** the D-optimal plan suggests **17 experiments vs 25 for the fcCCD (32% fewer)**. The paper's "25% reduction in experimental effort" is a different quantity: it includes two extra replicate experiments run for the D-optimal study (19 vs 25). Number of experiments and overall effort are not the same thing. The replicates are not listed in the SI tables, so they are not in `data/`.
+- **Run (5 h, 5 mol%, 242 mM, 1.0 equiv):** SI Table S4 gives **36%**, which is the correct value and the one used for the model coefficients. The 56% in main-text Table 2 (entry 26) is a typo (author clarification).
+- **Run (5 h, 12.5 mol%, 161 mM, 1.5 equiv):** this point is shared by both designs. The fcCCD campaign gave **93%**; repeating it to complete the D-optimal plan gave **78%** (SI Table S4). The authors attribute the difference to experimental variability and did not investigate it further.
 - **"% explained variance" in the SI is the *adjusted* R\u00b2** (76.29% / 96.24%); raw R\u00b2 is 90.1% / 99.5%.
 - The D-optimal model has only **2 residual degrees of freedom** (17 runs, 15 coefficients); its leave-one-out Q\u00b2 is strongly negative in the SI (-70.98%).
-- The abstract says "25% fewer" runs; 8 of 25 is **32%** (used in the body and conclusion).
 - The fcCCD table lists a single centre row although the text mentions triplicate centre runs (pure-error variance s\u00b2 = 2.44).
 - The paper says no interactions are noteworthy, yet classical p-values give b13 (and b12 in the fcCCD) p < 0.01; resampling p-values call nothing significant except b0/b1.
 """)
