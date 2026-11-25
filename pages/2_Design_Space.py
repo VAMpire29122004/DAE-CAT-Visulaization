@@ -37,7 +37,7 @@ with t2:
     f1 = a.selectbox("x", doe.FACTORS, 0, format_func=doe.LABELS.get, key="3x")
     f2 = b.selectbox("y", doe.FACTORS, 1, format_func=doe.LABELS.get, key="3y")
     f3 = c.selectbox("z", doe.FACTORS, 3, format_func=doe.LABELS.get, key="3z")
-        fig = px.scatter_3d(allruns, x=actual[f1], y=actual[f2], z=actual[f3], color="Y_pct_3a", symbol="Design",
+    fig = px.scatter_3d(allruns, x=actual[f1], y=actual[f2], z=actual[f3], color="Y_pct_3a", symbol="Design",
                         color_continuous_scale="Viridis", hover_data=["run", "Design"],
                         labels={"Y_pct_3a": "Y (%)"})
     fig.update_layout(
